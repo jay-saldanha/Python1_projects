@@ -1,0 +1,11 @@
+#Cheese order program
+max_value = 100
+min_value = .25
+order_amount = input("Enter cheese order weight (numeric value):  ")
+total_amount = float(order_amount)*21
+if float(order_amount) > float(max_value):
+    print (order_amount, "is more than currently available stock")
+elif float(order_amount) < float(min_value):
+    print (float(order_amount), "is less than currently available stock")
+else:
+    print (float(order_amount), "costs $", float(total_amount))
