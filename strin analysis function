@@ -1,0 +1,18 @@
+def str_analysis(input_string):
+   
+   while True:
+       if input_string.isdigit() == True:
+     
+           input_string = int (input_string)
+           if input_string > 99:
+               print("number is a big number")
+               break
+           elif input_string <= 99:
+               print("number is a small number")
+               break
+       elif input_string.isalpha() == True:
+           print (" input string is all alphabets")
+           break
+       else :
+            print(" this string is neither all alphabets nor all digits")
+            break
