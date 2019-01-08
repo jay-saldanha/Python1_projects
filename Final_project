@@ -1,0 +1,30 @@
+def adding_report(reporttype):
+    Total = 0
+    item_string="\n"+ "Items"+ "\n"
+    
+    while True:
+        input_str=input("Enter an integer or \"Q\" : ")
+        if(input_str=="Q"):
+            if(reporttype == "A"):
+                print(item_string)
+                print("\n"+"Total "+ "\n" + str(Total))
+                break
+            else:
+                print("\n" + "Total "+ "\n" + str(Total))
+                break
+        elif(input_str.isdigit()==True):
+            Total = int(Total) + int(input_str)
+            item_string = item_string + str(input_str) +'\n'
+        else:
+            print (input_str +"  is invalid input" +'\n')
+
+
+while True :
+    reporttype = input("what type  of report do you need A or T?: ")
+    if (reporttype =="A" or reporttype == "T"):
+        adding_report(reporttype)
+        break
+    else:    
+        print (" Invalid input, Enter A or T")
+
+
