@@ -1,3 +1,4 @@
+#Adding report type program
 def adding_report(reporttype):
     Total = 0
     item_string="\n"+ "Items"+ "\n"
@@ -26,5 +27,3 @@ while True :
         break
     else:    
         print (" Invalid input, Enter A or T")
-
-
